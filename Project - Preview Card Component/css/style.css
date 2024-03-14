@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  background-color: hsl(30, 38%, 92%);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+img, picture {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+main {
+  height: auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.block {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.perfume-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.perfume-content .grid-left {
+  display: flex;
+}
+.perfume-content .grid-right {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  background-color: hsl(0, 0%, 100%);
+  padding: 2rem;
+}
+.perfume-content .grid-right h3 {
+  color: hsl(228, 12%, 48%);
+  letter-spacing: 5px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+.perfume-content .grid-right h1 {
+  font-family: fraunces, sans-serif !important;
+  font-size: 2.2rem;
+  line-height: 1;
+}
+.perfume-content .grid-right p {
+  color: hsl(228, 12%, 48%);
+  font-weight: 500;
+  line-height: 1.5;
+  font-size: 0.9rem;
+}
+.perfume-content .grid-right .prices {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+}
+.perfume-content .grid-right .prices span:first-child {
+  color: hsl(158, 36%, 37%);
+  font-family: fraunces, sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.perfume-content .grid-right .prices span:nth-child(2) {
+  color: hsl(228, 12%, 48%);
+  font-size: 0.9rem;
+  text-decoration: line-through;
+  font-weight: 500;
+}
+.perfume-content .grid-right a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.perfume-content .grid-right a::before {
+  content: url(../images/icon-cart.svg);
+  padding-right: 0.5rem;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    height: auto;
+    padding: 2rem;
+  }
+  .perfume-content {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .perfume-content .grid-right {
+    row-gap: 1.5rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
