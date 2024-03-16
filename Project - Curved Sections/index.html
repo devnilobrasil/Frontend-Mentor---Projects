@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32"
+      href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./dist/css/style.css">
+    <title>Frontend Mentor | Huddle landing page with curved sections</title>
+
+  </head>
+  <body>
+    <header class="header">
+      <section class="header__content container">
+        <div class="header__content_logo">
+          <img src="src/assets/images/logo.svg" alt>
+        </div>
+        <div class="header__content_button">
+          <a href="#">Try it free</a>
+        </div>
+      </section>
+    </header>
+    <main class="main">
+      <section class="main__content block-hero">
+        <h1 class="main__content_title">
+          Build The Community Your Fans Will Love
+        </h1>
+        <p class="main__content_description">
+          Huddle re-imagines the way we build communities. You have a voice,
+          but so does your audience. Create connections with your users as you
+          engage in
+          genuine discussion.
+        </p>
+        <a class="button button_hero" href="#">Get Started For Free</a>
+      </section>
+      <div class="main__image block-hero">
+        <img src="src/assets/images/screen-mockups.svg" alt>
+      </div>
+      <section class="data block-hero">
+        <article class="data__content data__left">
+          <img class="data__content_image"
+            src="src/assets/images/icon-communities.svg" alt>
+          <h2 class="data__content_title">1.4k+</h2>
+          <p class="data__content_description">Communities Formed</p>
+        </article>
+        <article class="data__content data__right">
+          <img class="data__content_image"
+            src="src/assets/images/icon-messages.svg" alt>
+          <h2 class="data__content_title">2.7m+</h2>
+          <p class="data__content_description">Messages Sent</p>
+        </article>
+      </section>
+    </main>
+
+    <section class="benefits">
+      <article class="benefits__item">
+        <picture class="benefits__item_image--top">
+          <source
+            srcset="./src/assets/images/bg-section-top-desktop-1.svg"
+            media="(min-width: 480px)" />
+          <img class="benefits__image"
+            src="./src/assets/images/bg-section-top-mobile-1.svg"
+            alt="top" />
+        </picture>
+        <div class="benefits__item_content">
+          <div class="benefits__item_content_text">
+            <h1 class="benefits__item_content_text_title">Grow Together</h1>
+            <p class="benefits__item_content_text_description">
+              Generate meaningful discussions with your audience and build a
+              strong,
+              loyal
+              community.
+              Think of the insightful conversations you miss out on with a
+              feedback
+              form.
+            </p>
+          </div>
+          <div class="benefits__item_content_image">
+            <img src="src/assets/images/illustration-grow-together.svg" alt>
+          </div>
+        </div>
+        <picture class="benefits__item_image--bottom">
+          <source
+            srcset="./src/assets/images/bg-section-bottom-desktop-1.svg"
+            media="(min-width: 480px)" />
+          <img class="benefits__image"
+            src="./src/assets/images/bg-section-bottom-mobile-1.svg"
+            alt="bottom" />
+        </picture>
+      </article>
+      <article>
+
+      </article>
+      <article class="benefits__item">
+        <div class="benefits__item_content benefits__item_content--disabled">
+          <div class="benefits__item_content_text benefits__item_content_text--reverse">
+            <h1 class="benefits__item_content_text_title">
+              Flowing Conversations
+            </h1>
+            <p class="benefits__item_content_text_description">
+              You wouldn't paginate a conversation in real life, so why do it
+              online?
+              Our threads have
+              just-in-time loading for a more natural flow.
+            </p>
+          </div>
+          <div class="benefits__item_content_image">
+            <img src="src/assets/images/illustration-flowing-conversation.svg" alt>
+          </div>
+        </div>
+      </article>
+
+      <article class="benefits__item">
+        <picture class="benefits__item_image--top">
+          <source
+            srcset="./src/assets/images/bg-section-top-desktop-1.svg"
+            media="(min-width: 480px)" />
+          <img class="benefits__image"
+            src="./src/assets/images/bg-section-top-mobile-1.svg"
+            alt="top" />
+        </picture>
+        <div class="benefits__item_content">
+          <div class="benefits__item_content_text">
+            <h1 class="benefits__item_content_text_title">
+              Your Users
+            </h1>
+            <p class="benefits__item_content_text_description">
+              It takes no time at all to integrate Huddle with your app's
+              authentication
+              solution. This means,
+              once signed in to your app, your users can start chatting
+              immediately.
+            </p>
+          </div>
+          <div class="benefits__item_content_image">
+            <img src="src/assets/images/illustration-your-users.svg" alt>
+          </div>
+        </div>
+        <picture class="benefits__item_image--bottom">
+          <source
+            srcset="./src/assets/images/bg-section-bottom-desktop-1.svg"
+            media="(min-width: 480px)" />
+          <img class="benefits__image"
+            src="./src/assets/images/bg-section-bottom-mobile-1.svg"
+            alt="bottom" />
+        </picture>
+      </article>
+
+    </article>
+    <article class="benefits__item">
+      <div class="benefits__item_content benefits__item_content--disabled benefits__item_content--flex">
+        <div class="benefits__item_content_text benefits__item_content_text--center">
+          <h1 class="benefits__item_content_text_title">
+            Ready to Build Your Community?
+          </h1>
+        <a class="button button__benefits" href="#">Get Started For Free</a>
+      </div>
+    </article>
+
+    </section>
+<!-- 
+    Get Started For Free
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam,
+    hendrerit lacinia
+    vestibulum a, ultrices quis sem.
+
+    Phone: +1-543-123-4567
+    example@huddle.com
+
+    Newsletter
+    To recieve tips on how to grow your community, sign up to our weekly
+    newsletter. We’ll never
+    send you spam or pass on your email address
+
+    Subscribe -->
+
+  </body>
+</html>

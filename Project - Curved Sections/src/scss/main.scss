@@ -1,0 +1,25 @@
+@use 'base/reset.scss';
+@use 'base/typography.scss';
+@use 'base/colours.scss';
+
+@import '../scss/layout/header.scss';
+@import '../scss/layout/hero.scss';
+@import '../scss/layout/benefits.scss';
+
+body{
+    overflow-x: hidden;
+    font{
+        family: typography.$poppins;
+        size: typography.$font-size;
+    }
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.block-hero{
+    max-width: 1100px;
+    margin: 0 auto;
+}

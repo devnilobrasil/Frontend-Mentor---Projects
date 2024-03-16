@@ -1,0 +1,79 @@
+@use '../base/typography.scss';
+@use '../base/colours.scss';
+@use '../components/button-hero.scss';
+
+.main{
+    width: 100%;
+    padding-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 7rem;
+    
+    &__content{
+
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5rem;
+
+        &_title{
+            font: {
+                size: typography.$hero-sizes;
+                family: typography.$poppins;
+            };
+            color: colours.$very-dark-cyan;
+            
+        }
+
+        &_description{
+            width: 45%;
+            text-align: center;
+            color: colours.$very-dark-cyan;
+            font: {
+                size: 1.25rem;
+                family: typography.$open-sans;
+                weight: 400
+            };
+        }
+    }
+
+    .data{
+        width: 100%;
+        display: grid;
+        place-items: center;
+        grid-template-columns: repeat(2, 1fr);
+
+        &__content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: .3rem;
+
+            &_image{
+                align-self: flex-start;
+            }
+
+            &_title{
+                color: colours.$very-dark-cyan;
+                font: {
+                    weight: 700;
+                    size: 5.5rem;
+                    family: typography.$open-sans;
+                };
+            }
+
+            &_description{
+                color: colours.$grey;
+                font: {
+                    size: 1.4rem;
+                    family: typography.$open-sans;
+                };
+            }
+        }
+
+
+    }
+
+}   

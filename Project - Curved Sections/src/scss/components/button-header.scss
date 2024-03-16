@@ -1,0 +1,12 @@
+@use '../base/colours.scss';
+@use '../base/typography.scss';
+
+
+.header__content_button a{
+    border: 2px solid colours.$pink;
+    color: colours.$pink;
+    padding: .5rem 1.85rem;
+    border-radius: 2rem;
+    font-size: .95rem;
+    font-family: typography.$open-sans;
+}
