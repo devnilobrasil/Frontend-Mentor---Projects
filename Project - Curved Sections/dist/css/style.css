@@ -159,7 +159,6 @@ select {
 
 .benefits {
   width: 100%;
-  height: 100vh;
   margin-top: 3rem;
   display: flex;
   flex-direction: column;
@@ -176,6 +175,7 @@ select {
   grid-template-columns: repeat(2, 1fr);
   place-items: center;
   width: 100%;
+  padding: 0 2rem;
   background-color: hsl(207, 100%, 98%);
 }
 .benefits__item_content--disabled {
@@ -201,7 +201,7 @@ select {
   line-height: 1.5;
   font-weight: 400;
   font-family: Open Sans, sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
 }
 .benefits__item_content_text--reverse {
   order: 1;
@@ -223,6 +223,89 @@ select {
   width: 60%;
 }
 
+.footer__content_newsletter_subscribe_button {
+  text-decoration: none;
+  background-color: hsl(322, 100%, 66%);
+  color: hsl(207, 100%, 98%);
+  padding: 1rem 2.5rem;
+  border-radius: 0.35rem;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  font-family: Open Sans, sans-serif;
+  font-weight: 600;
+}
+
+.footer {
+  width: 100%;
+  height: 90vh;
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+.footer__image--top {
+  width: 100%;
+}
+.footer__content {
+  background-color: hsl(192, 100%, 9%);
+  color: hsl(207, 100%, 98%);
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  align-items: start;
+  height: 100%;
+  padding-top: 5rem;
+  font-weight: 500;
+  font-family: Open Sans, sans-serif;
+  font-size: 0.85rem;
+}
+.footer__content_info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  width: 500px;
+  height: auto;
+  row-gap: 2rem;
+}
+.footer__content_info_image {
+  width: 50%;
+}
+.footer__content_info_description {
+  width: 60%;
+  line-height: 2;
+}
+.footer__content_info_phone, .footer__content_info_email {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+}
+.footer__content_info_socials {
+  display: flex;
+  gap: 2rem;
+  padding-top: 2.5rem;
+  width: 100%;
+}
+.footer__content_newsletter {
+  row-gap: 1.5rem;
+}
+.footer__content_newsletter_title {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+.footer__content_newsletter_subscribe {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.footer__content_newsletter_subscribe_input {
+  width: 65%;
+  padding: 1rem;
+  border-radius: 0.35rem;
+  border: none;
+  outline: none;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -232,7 +315,7 @@ body font {
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 1500px;
   margin: 0 auto;
 }
 

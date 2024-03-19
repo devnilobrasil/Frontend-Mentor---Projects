@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["src/scss/reset.scss","src/scss/main.scss"],"names":[],"mappings":"AAAA;AACA;EACE;EACA;EACA;;;AAGF;AACA;EACE;EACA;EACA;;;AAGF;AACA;AAAA;EAEE;;;AAGF;AACA;AAAA;EAEE;;;AAGF;AACA;EACE;;;AAGF;AACA;AAAA;EAEE;;;AAGF;AACA;EACE;EACA;;;AAGF;AACA;AAAA;EAEE;EACA;;;AAGF;AACA;AAAA;EAEE;;;AClDF;EACI;;;AAIJ;EACI;EACA","file":"App.css"}

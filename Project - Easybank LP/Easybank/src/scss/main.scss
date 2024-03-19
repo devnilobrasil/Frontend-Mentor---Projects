@@ -1,0 +1,12 @@
+@import '../components/Header/Header.scss';
+@import './reset.scss';
+
+body{
+    width: 100%;
+    
+}
+
+.container{
+    max-width: 1366px;
+    margin: 0 auto;
+}

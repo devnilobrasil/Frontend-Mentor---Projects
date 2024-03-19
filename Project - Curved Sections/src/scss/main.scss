@@ -5,6 +5,7 @@
 @import '../scss/layout/header.scss';
 @import '../scss/layout/hero.scss';
 @import '../scss/layout/benefits.scss';
+@import '../scss/layout/footer.scss';
 
 body{
     overflow-x: hidden;
@@ -15,7 +16,7 @@ body{
 }
 
 .container{
-    max-width: 1400px;
+    max-width: 1500px;
     margin: 0 auto;
 }
 

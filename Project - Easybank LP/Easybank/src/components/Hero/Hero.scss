@@ -1,0 +1,80 @@
+@use '../../scss/base/colours/colours';
+@use '../../scss/base/typography/typography';
+
+.main{
+    background: linear-gradient(to bottom, colours.$Light-Grayish-Blue, colours.$White);
+    width: 100%;
+
+    &__content{
+        position: relative;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+        
+        &_left{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            &_text{
+                height: 100%;
+                width:50%;
+                gap: 2rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                &_title{
+                    color: colours.$dark-blue;
+                    width: 100%;
+                    font: {
+                        family: typography.$public-sans;
+                        size: 3.9rem;
+                        weight: 300;
+                    
+                    };
+                }
+                
+                &_description{
+                    color: colours.$Grayish-Blue;
+                    width: 100%;
+                    font: {
+                        family: typography.$public-sans;
+                        size: 1.15rem;
+                        weight: 400;
+                    };
+                    line-height: 1.7;
+                    
+                }
+            }
+
+        }
+        
+        &_right{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: {
+                image: url(../../assets/bg-intro-desktop.svg);
+                repeat: no-repeat;
+                position: 15% 200%;
+            }
+            position: relative;
+            z-index: 10;
+
+            .main__content_image-mockup{
+                position: relative;
+                z-index: 88;
+                left: 15%;
+            }
+        }
+    }
+}

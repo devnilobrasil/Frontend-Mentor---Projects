@@ -1,0 +1,56 @@
+@use '../../scss/base/colours/colours';
+@use '../../scss/base/typography/typography';
+
+header{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    position: fixed;
+    z-index: 100;
+    align-items: center;
+    background-color: colours.$White;
+}
+
+.header__content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    
+    &_nav{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &_items{
+            height: 100%;
+            display: flex;
+            align-items: center;
+            gap: 2.5rem;
+            color: colours.$Grayish-Blue;
+            font: {
+                family: typography.$public-sans;
+            }
+
+            &_li {
+                display: flex;
+                height: 100%;
+                align-items: center;
+                align-self: center;
+                border-bottom: 3px solid transparent;
+
+                &:hover {
+                    border-bottom: 3px solid colours.$Lime-Green;
+                }
+            }
+    
+        }
+
+    }
+}
+
+
+

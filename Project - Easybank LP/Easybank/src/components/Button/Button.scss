@@ -1,0 +1,29 @@
+@use '../../scss/base/colours/colours';
+@use '../../scss/base/typography/typography';
+
+.button{
+    width: 9.5rem;
+    text-align: center;
+    background: colours.$linear-green-cyan;
+    border-radius: 20rem;
+    transition: opacity .3s;
+    
+    &__text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: .9rem 0;
+        color: colours.$White;
+        font: {
+            size: .9rem;
+            weight: 600;
+            family: typography.$public-sans;
+        }
+        text-decoration: none;
+    }
+}
+
+.button:hover{
+    opacity: .75;
+}
